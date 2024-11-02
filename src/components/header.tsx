@@ -2,7 +2,7 @@ import Link from "next/link";
 import { navLinks } from "@/utils/constant";
 
 const Header = () => (
-  <nav className="p-4">
+  <nav className="p-4 h-auto">
     <div className="container mx-auto flex justify-between items-center">
       <Link href="/" className="text-white font-bold text-2xl">
         Hoa Tran
