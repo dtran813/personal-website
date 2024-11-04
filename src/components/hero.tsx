@@ -5,7 +5,7 @@ const Hero = () => (
     <div className="relative flex h-full items-center justify-center text-center">
       <div className="mb-32">
         <h1
-          className="name text-4xl font-bold text-white md:text-6xl"
+          className="name text-5xl font-black tracking-wide text-white md:text-7xl"
           role="heading"
           aria-label="Hoa Tran"
           aria-level={1}
