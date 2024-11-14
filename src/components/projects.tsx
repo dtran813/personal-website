@@ -31,7 +31,7 @@ const Projects = () => {
         demonstrated throughout my work.
       </motion.p>
 
-      <div className="flex w-full flex-wrap justify-center gap-x-5 py-8 sm:gap-10 lg:py-12">
+      <div className="flex w-full flex-wrap justify-center gap-y-4 py-8 lg:gap-8 lg:py-12">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}

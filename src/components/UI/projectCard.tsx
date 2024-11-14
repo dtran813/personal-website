@@ -41,7 +41,7 @@ const ProjectCard = ({
           href={liveLink}
           aria-label={`Check out the ${name} website`}
           target="_blank"
-          className="mb-4 block h-60 w-full sm:mb-0 md:mb-5"
+          className="mb-4 block h-60 w-full flex-initial sm:mb-0 sm:flex-1 lg:mb-5 lg:flex-initial"
         >
           <Image
             src={image}
@@ -50,11 +50,13 @@ const ProjectCard = ({
           />
         </Link>
 
-        <div className="md:ml-6 flex flex-col justify-between ml-0">
-          <h3 className="mb-2 text-base md:text-2xl">{name}</h3>
-          <p className="text-sm text-neutral-300 md:text-base">{description}</p>
+        <div className="ml-0 flex flex-1 flex-col justify-between sm:ml-8 sm:justify-around lg:ml-0 lg:justify-between">
+          <h3 className="mb-2 text-base font-semibold sm:mb-0 sm:text-2xl lg:mb-2">
+            {name}
+          </h3>
+          <p className="text-sm text-neutral-300 sm:text-base">{description}</p>
 
-          <div className="mt-4 flex gap-1 text-base md:gap-4 md:text-lg">
+          <div className="mt-2 flex gap-1 text-base sm:mt-0 md:gap-4 md:text-lg lg:mt-4">
             {tags.map((tag) => (
               <p key={`${name}-${tag.name}`} className={tag.color}>
                 #{tag.name}
