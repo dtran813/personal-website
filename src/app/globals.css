@@ -32,6 +32,54 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.green-text-gradient {
+  background: hsl(175, 80%, 40%);
+  background: -webkit-linear-gradient(
+    to top,
+    hsl(175, 80%, 40%),
+    hsl(140, 85%, 60%)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    hsl(175, 80%, 40%),
+    hsl(140, 85%, 60%)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blue-text-gradient {
+  background: hsl(195, 87%, 66%);
+  background: -webkit-linear-gradient(
+    to top,
+    hsl(214, 82%, 57%),
+    hsl(195, 87%, 66%)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    hsl(214, 82%, 57%),
+    hwb(195 36% 4%)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pink-text-gradient {
+  background: hsl(320, 100%, 50%);
+  background: -webkit-linear-gradient(
+    to top,
+    hsl(320, 100%, 50%),
+    hsl(0, 96%, 70%)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    hsl(320, 100%, 50%),
+    hsl(0, 96%, 70%)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .name {
   --first: hsl(160, 60%, 45%);
   --second: hsl(180, 50%, 55%);
